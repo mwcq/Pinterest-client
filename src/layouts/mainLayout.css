@@ -1,0 +1,11 @@
+.app {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.container {
+  flex: 1;
+  margin-right: 16px;
+  background-color: #fff;
+}
