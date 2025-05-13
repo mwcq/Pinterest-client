@@ -1,4 +1,129 @@
 .createPage {
-
 }
 
+.createTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  padding: 16px 0;
+}
+
+.createTop h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.createTop button {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.createTop button:hover {
+  background-color: #333;
+}
+
+.createBottom {
+  display: flex;
+  margin-top: 32px;
+  gap: 64px;
+  justify-content: center;
+}
+
+.upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px dashed #dddddd;
+  width: 375px;
+  height: 574px;
+  padding: 16px;
+  position: relative;
+}
+
+.uploadTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.uploadInfo {
+  position: absolute;
+  font-size: 14px;
+  color: #666;
+  bottom: 32px;
+  text-align: center;
+}
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 584px;
+}
+
+.createFormItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.createFormItem label {
+  font-size: 13px;
+  color: #666;
+}
+
+.createFormItem input,
+textarea,
+select {
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.createFormItem textarea {
+  resize: none;
+}
+
+.createFormItem select {
+  appearance: none;
+}
+
+small {
+  font-size: 12px;
+  color: #666;
+}
+
+@media (max-width: 1104px) {
+  .createBottom {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .createForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .upload {
+    width: 100%;
+  }
+}

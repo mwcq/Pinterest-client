@@ -17,10 +17,10 @@ createRoot(document.getElementById("root")).render(
           <Route path="/" element={<HomePage />} />
           <Route path="/pin/:id" element={<PostPage />} />
           <Route path="/create" element={<CreatePage />} />
-          <Route path="/auth" element={<AuthPage />} />
           <Route path="/:username" element={<ProFilePage />} />
           <Route path="/search" element={<SearchPage />} />
         </Route>
+        <Route path="/auth" element={<AuthPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

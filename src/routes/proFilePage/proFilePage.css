@@ -1,2 +1,78 @@
 .proFilePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileName {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profileUsername {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+
+.followCounts {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profileInteractions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.profileButtons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profileButtons button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profileButtons button:hover {
+  background-color: #333;
+}
+
+.profileOptions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.profileOptions span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.profileOptions span:hover {
+  color: #333;
+}
+
+.active {
+  color: #000;
+  border-bottom: 2px solid #000;
 }

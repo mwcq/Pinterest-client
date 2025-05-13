@@ -1,21 +1,34 @@
 import React, { useState } from "react";
 import "./userButton.css";
-
+import Image from "../image/image";
 export default function userButton() {
   const [open, setOpen] = useState(false);
   const currentUser = true;
 
   return currentUser ? (
     <div className="userButton">
-      <img src="/general/noAvatar.png" alt="" />
-      <img
+      <Image
+        path="/PinterestGeneral/noAvatar.png"
+        alt="noAvatar"
+        className="userButtonAvatar"
+        w={24}
+        h={24}
+      />
+      <div
+        className=""
         onClick={() => {
           setOpen(!open);
         }}
-        src="/general/arrow.svg"
-        alt=""
-        className={`arrow ${open ? "openArrow" : "closeArrow"}`}
-      />
+      >
+        <Image
+          path="/PinterestGeneral/arrow.svg"
+          alt="arrow"
+          className={`arrow ${open ? "openArrow" : "closeArrow"}`}
+          w={24}
+          h={24}
+        />
+      </div>
+
       {open && (
         <div className="userOptions">
           <div className="userOption">个人资料</div>
